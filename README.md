@@ -1,16 +1,129 @@
-# React + Vite
+# 🌸✨ React HR Management System ✨🌸  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there! 💖  
+This is my Intern React Training Project — a simple yet powerful **HR Employee Management System** built with React + Vite.
 
-Currently, two official plugins are available:
+It simulates a real-world HR dashboard where employees can be managed, departments updated, and leave requests tracked — all with a clean and responsive UI ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 💻 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛ React (Vite)
+- 🎨 Tailwind CSS
+- 🔁 React Router DOM
+- 🌍 Context API
+- 💾 LocalStorage
+- 🧪 Vitest + React Testing Library
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌷 Features
+
+### 👩‍💼 Employee Directory (CRUD)
+
+- 🌼 View employee list
+- ➕ Add new employee
+- ✏ Edit employee details
+- ❌ Delete employee (with confirmation)
+- 🔍 Real-time search
+- 🏢 Department filtering
+- ☑ Bulk delete option
+
+---
+
+### 🏢 Department Global State
+
+Using Context API to manage department data globally.  
+Changes reflect instantly across the app ✨
+
+---
+
+### 📅 Leave Request Tracker
+
+- 📝 Employees can submit leave requests
+- 🚫 Prevents selecting past dates
+- ✅ HR can Approve / Reject requests
+- 📌 Status tracking system
+
+---
+
+### 🔐 Role-Based Access
+
+- 🌍 Public Company News page
+- 👑 Protected Admin Dashboard
+- 🔑 Mock Login system
+- 🎨 Role-based UI behavior
+
+---
+
+## 📱 Responsive Design
+
+This project is fully responsive:
+
+- 📱 Mobile friendly
+- 💻 Desktop optimized
+- 📊 Scrollable tables
+- 🎀 Clean modern layout
+
+---
+
+## 🧠 What I Learned
+
+Through this project, I practiced:
+
+- React Hooks (useState, useEffect, useContext)
+- Component architecture
+- Global state management
+- Routing & Protected Routes
+- Form validation
+- Responsive UI design
+- Basic unit testing
+
+---
+
+## 🚀 How To Run This Project
+
+Clone the repository:
+
+```bash
+git clone <your-repo-link>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed using:
+
+- Vercel
+- Netlify
+
+---
+
+## 💖 Final Note
+
+This project was built as part of my journey learning modern React development.  
+I'm continuously improving my skills and excited to build more beautiful applications in the future 🌸✨
+
+---
+
+👩‍💻 Made with dedication, coffee, and a little sparkle ✨
