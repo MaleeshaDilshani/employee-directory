@@ -9,7 +9,7 @@ import CompanyNews from "./pages/CompanyNews";
 import MainLayout from "./layouts/MainLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-function App() {
+function App() { 
 
   const { user } = useContext(AuthContext); 
 
