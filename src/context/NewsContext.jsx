@@ -19,7 +19,7 @@ const newsSeedData = [
       "Quarterly meeting highlights including roadmap updates and company expansion plans.",
     category: "Company",
     date: "2/23/2026",
-    image: "https://source.unsplash.com/400x300/?meeting"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJYEFFBjLL0bnO_BboKBp6qq5IZ6q9mpAQw&s"
   }
 ];
 
