@@ -10,7 +10,7 @@ const newsSeedData = [
       "Please join us in welcoming Aisha Thompson as our new Marketing Director. She brings 12 years of experience in B2B marketing.",
     category: "Company",
     date: "2/5/2026",
-    image: "https://source.unsplash.com/400x300/?office"
+    image: "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHfSl9dGFUAighktQi7Bk88WyDp8LiqFQdg&s"
   },
   {
     id: 2,
