@@ -2,7 +2,23 @@ import { useContext, useState } from "react";
 import { EmployeeContext } from "../context/EmployeeContext";
 import { AuthContext } from "../context/AuthContext";
 
-function Directory() {
+function Directory() { 
+  const dummyEmployees = [
+  {
+    id: 1,
+    name: "Lakshmi Kumari",
+    department: "HR",
+    email: "lakshmi@gmail.com",
+    contact: "0785336575"
+  },
+  {
+    id: 2,
+    name: "Sadeepa Dilshan",
+    department: "Finance",
+    email: "sad@gmail.com",
+    contact: "0785336575"
+  }
+];
 
   const { employees, addEmployee, deleteEmployee, editEmployee } =
     useContext(EmployeeContext);
