@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage.js";
-import { defaultEmployees, newsSeedData, leaveSeedData } from "../utils/seedData.js";
+
 
 export const EmployeeContext = createContext();
 
