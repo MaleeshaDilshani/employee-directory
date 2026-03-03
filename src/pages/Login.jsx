@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import loginImage from "../assets/2.png";
-
+ 
 function Login() {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
