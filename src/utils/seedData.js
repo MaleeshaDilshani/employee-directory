@@ -1,5 +1,5 @@
 // ================= EMPLOYEE SEED DATA =================
-export const employeeSeedData = [
+export const defaultEmployees = [
   {
     id: 1,
     name: "Lakshmi Kumari",
