@@ -6,7 +6,7 @@ export const EmployeeContext = createContext();
 
 export const EmployeeProvider = ({ children }) => {
 
-  // ✅ Seed data use karanne me widihata
+ 
   const [employees, setEmployees] = useLocalStorage("employees", defaultEmployees);
   const [leaveRequests, setLeaveRequests] = useLocalStorage("leaveRequests", leaveSeedData);
   const [news, setNews] = useLocalStorage("news", newsSeedData);
