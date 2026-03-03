@@ -1,8 +1,32 @@
 import { useContext, useState } from "react";
 import { EmployeeContext } from "../context/EmployeeContext";
 import { AuthContext } from "../context/AuthContext";
+/* ⭐ Dummy Data (Only UI Display Backup) */
+const dummyEmployees = [
+  {
+    id: 1,
+    name: "Lakshmi Kumari",
+    email: "lakshmi@gmail.com",
+    department: "HR",
+    contact: "0785336575"
+  },
+  {
+    id: 2,
+    name: "Sadeepa Dilshan",
+    email: "sadeepa@gmail.com",
+    department: "Finance",
+    contact: "0785336575"
+  },
+  {
+    id: 3,
+    name: "Nimal Wickramathilaka",
+    email: "nimal@gmail.com",
+    department: "Marketing",
+    contact: "0724673773"
+  }
+];
 
-function Directory() { 
+function Directory() {  
   
 
   const { employees, addEmployee, deleteEmployee, editEmployee } =
@@ -10,7 +34,18 @@ function Directory() {
 
   const { user } = useContext(AuthContext);
   const isAdmin = user?.role === "admin";
+/* ⭐ Fallback Data Logic */
+  const [localEmployees, setLocalEmployees] = useState([]);
 
+  useEffect(() => {
+
+    if (employees && employees.length > 0) {
+      setLocalEmployees(employees);
+    } else {
+      setLocalEmployees(dummyEmployees);
+    }
+
+  }, [employees]);
   const [search, setSearch] = useState("");
   const [departmentFilter, setDepartmentFilter] = useState("");
   const [showForm, setShowForm] = useState(false);
