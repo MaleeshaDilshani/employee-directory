@@ -2,7 +2,7 @@ import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const NewsContext = createContext();
-
+ 
 export function NewsProvider({ children }) {
 
   const [news, setNews] = useLocalStorage("news", []);
