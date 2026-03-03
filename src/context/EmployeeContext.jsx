@@ -1,13 +1,13 @@
 import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage.js";
-import { employeeSeedData, newsSeedData, leaveSeedData } from "../utils/seedData";
+import { defaultEmployees, newsSeedData, leaveSeedData } from "../utils/seedData";
 
 export const EmployeeContext = createContext();
 
 export const EmployeeProvider = ({ children }) => {
 
   // ✅ Seed data use karanne me widihata
-  const [employees, setEmployees] = useLocalStorage("employees", employeeSeedData);
+  const [employees, setEmployees] = useLocalStorage("employees", defaultEmployees);
   const [leaveRequests, setLeaveRequests] = useLocalStorage("leaveRequests", leaveSeedData);
   const [news, setNews] = useLocalStorage("news", newsSeedData);
 
